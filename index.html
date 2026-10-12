@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#11100e">
+<title>Para Ana-i · 2 años</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#11100e;
+  --black2:#191714;
+  --cream:#f5efe4;
+  --soft:#d9d0c1;
+  --gold:#c9a45b;
+  --gold2:#e7cf98;
+  --rose:#a87578;
+  --white:#fffaf2;
+  --line:rgba(231,207,152,.22);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--cream);
+  background:
+    radial-gradient(circle at 12% 8%,rgba(201,164,91,.10),transparent 25%),
+    radial-gradient(circle at 90% 55%,rgba(168,117,120,.10),transparent 28%),
+    var(--black);
+  font-family:"DM Sans",sans-serif;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:100;
+  opacity:.025;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a{text-decoration:none;color:inherit}
+section{padding:105px 20px}
+.wrap{width:min(1050px,100%);margin:auto}
+.eyebrow{
+  color:var(--gold2);text-transform:uppercase;letter-spacing:.25em;
+  font-size:.68rem;font-weight:600;margin-bottom:14px;
+}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",serif}
+h2{font-size:clamp(2.7rem,6vw,5rem);line-height:.92;font-weight:500;margin:0 0 20px}
+p{color:var(--soft);line-height:1.85}
+
+/* INTRO */
+.hero{
+  min-height:100svh;display:grid;place-items:center;text-align:center;
+  position:relative;overflow:hidden;padding:30px 20px;
+}
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(rgba(17,16,14,.30),rgba(17,16,14,.90)),
+    url("assets/hero.jpg") center/cover no-repeat;
+  filter:saturate(.78);
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at center,transparent 15%,rgba(10,9,8,.72) 90%);
+}
+.hero-content{position:relative;z-index:1;max-width:850px}
+.monogram{
+  width:82px;height:82px;margin:0 auto 30px;border:1px solid var(--gold);
+  border-radius:50%;display:grid;place-items:center;
+  color:var(--gold2);font:600 2rem "Cormorant Garamond";
+  background:rgba(10,9,8,.30);backdrop-filter:blur(8px);
+}
+.hero h1{font-size:clamp(5rem,15vw,10rem);line-height:.72;margin:0 0 30px;font-weight:500}
+.hero h1 span{display:block;font-size:.37em;line-height:1.4;letter-spacing:.08em;color:var(--gold2);margin-top:25px}
+.hero .lead{max-width:650px;margin:0 auto 34px;font-size:1rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 25px;border-radius:999px;border:1px solid var(--gold);
+  background:var(--gold);color:#18130b;font-weight:600;cursor:pointer;
+  transition:.25s;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(201,164,91,.18)}
+.btn.outline{background:transparent;color:var(--cream)}
+.scroll{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.18em;color:#b8afa1}
+
+/* STORY */
+.center{text-align:center}
+.intro-copy{max-width:760px;margin:0 auto}
+.big-quote{
+  font:500 clamp(2rem,4.5vw,3.6rem)/1.15 "Cormorant Garamond";
+  color:var(--white);margin:35px auto 0;max-width:850px;
+}
+.gold-line{width:60px;height:1px;background:var(--gold);margin:30px auto}
+
+/* DETAILS */
+.cards{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px
+}
+.card{
+  padding:30px;border:1px solid var(--line);background:rgba(255,255,255,.025);
+  border-radius:2px;min-height:220px;
+}
+.card .icon{font-size:25px;color:var(--gold2);margin-bottom:22px}
+.card h3{font-size:2rem;margin:0 0 10px;font-weight:500}
+.card p{font-size:.9rem;margin:0}
+
+/* GALLERY */
+.gallery{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:40px
+}
+.photo{
+  position:relative;overflow:hidden;border:1px solid var(--line);
+  background:#201d19;min-height:280px
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s}
+.photo-placeholder{
+  width:100%;height:100%;min-height:inherit;display:grid;place-items:center;
+  padding:25px;text-align:center;color:#9f9587;
+  background:
+    linear-gradient(135deg,rgba(201,164,91,.06),rgba(255,255,255,.02));
+}
+.photo-placeholder strong{display:block;color:var(--gold2);font-family:"Cormorant Garamond";font-size:1.5rem}
+.photo-placeholder small{display:block;margin-top:7px;line-height:1.6}
+.photo:hover img{transform:scale(1.04)}
+.photo:nth-child(1){grid-column:span 7;min-height:460px}
+.photo:nth-child(2){grid-column:span 5}
+.photo:nth-child(3){grid-column:span 5}
+.photo:nth-child(4){grid-column:span 7;min-height:460px}
+.photo:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(transparent 60%,rgba(0,0,0,.65))
+}
+.photo figcaption{
+  position:absolute;z-index:2;bottom:16px;left:18px;right:18px;
+  font:500 1.35rem "Cormorant Garamond";color:#fff
+}
+
+/* TIMELINE */
+.timeline{max-width:780px;margin:55px auto 0;border-left:1px solid var(--line)}
+.moment{position:relative;padding:0 0 55px 45px}
+.moment:last-child{padding-bottom:0}
+.moment:before{
+  content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;
+  border-radius:50%;background:var(--gold);box-shadow:0 0 0 7px rgba(201,164,91,.08)
+}
+.moment .number{font-size:.7rem;letter-spacing:.2em;color:var(--gold2)}
+.moment h3{font-size:2.2rem;font-weight:500;margin:7px 0}
+.moment p{margin:0;max-width:620px}
+
+/* LETTER */
+.letter{
+  max-width:850px;margin:45px auto 0;padding:clamp(30px,6vw,70px);
+  background:var(--cream);color:#29231d;position:relative;
+  box-shadow:0 25px 80px rgba(0,0,0,.3);
+}
+.letter:before{
+  content:"";position:absolute;inset:10px;border:1px solid rgba(41,35,29,.18);pointer-events:none
+}
+.letter p{position:relative;color:#3f3730;font:500 1.27rem/1.7 "Cormorant Garamond"}
+.letter .opening{font-size:2.2rem;color:#201b17}
+.signature{font:600 2.2rem "Cormorant Garamond";color:#6f4c50;margin-top:30px;position:relative}
+
+/* FAMILY */
+.family{
+  min-height:650px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden
+}
+.family:before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(rgba(17,16,14,.18),rgba(17,16,14,.88)),
+    url("assets/familia.jpg") center/cover no-repeat;
+}
+.family-content{position:relative;max-width:820px}
+.family h2{font-size:clamp(3.2rem,8vw,6.5rem)}
+.family .tiny{font-size:.9rem;max-width:620px;margin:auto}
+
+/* COUPON */
+.coupon-section{text-align:center}
+.coupon{
+  width:min(680px,100%);margin:45px auto 0;padding:8px;
+  background:linear-gradient(135deg,#9e7b39,#ead29a,#a37c36);
+  transform:rotate(-1deg);box-shadow:0 30px 80px rgba(0,0,0,.4)
+}
+.coupon-inner{
+  padding:55px 30px;background:#171512;border:1px dashed rgba(255,255,255,.35)
+}
+.coupon-label{font-size:.65rem;letter-spacing:.25em;color:var(--gold2)}
+.coupon h3{font-size:4rem;line-height:.9;margin:18px 0}
+.coupon .mystery{font:1.4rem "Cormorant Garamond";color:#fff;margin:0 auto 28px;max-width:520px}
+.reveal{
+  max-height:0;overflow:hidden;transition:max-height .8s ease
+}
+.coupon.open .reveal{max-height:400px}
+.secret{
+  margin-top:25px;padding:25px;border:1px solid var(--line);background:rgba(201,164,91,.06)
+}
+.secret strong{display:block;color:var(--gold2);letter-spacing:.12em;font-size:.72rem}
+.secret p{font:1.5rem "Cormorant Garamond";color:#fff}
+.secret .terms{font:italic;font-size:.9rem;color:#bcb2a5}
+
+/* FOOTER */
+footer{text-align:center;padding:80px 20px 100px}
+.footer-title{font:500 3rem "Cormorant Garamond";margin-bottom:12px}
+.footer-small{font-size:.72rem;color:#8d867d}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  section{padding:80px 17px}
+  .hero h1{font-size:clamp(4rem,19vw,5.2rem)}
+  .hero .lead{font-size:.93rem}
+  .cards{grid-template-columns:1fr}
+  .photo:nth-child(n){grid-column:span 12;min-height:330px}
+  .photo img{object-position:center}
+  .letter{padding:35px 25px}
+  .letter p{font-size:1.18rem}
+  .coupon{transform:none}
+  .coupon-inner{padding:42px 20px}
+  .coupon h3{font-size:3.2rem}
+  .btn{width:100%;max-width:320px}
+  .family{min-height:560px}
+}
+
+.family-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.family-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.family-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(17,16,14,.15),
+      rgba(17,16,14,.88)
+    );
+}
+
+.family-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+}
+
+/* ========================================
+   GALERÍA DE RECUERDOS INTERACTIVA
+======================================== */
+
+.memory-section {
+    --memory-gold: #c9a45b;
+    --memory-gold-light: #e7cf98;
+    --memory-dark: #171512;
+    --memory-cream: #f5efe4;
+
+    width: 100%;
+    padding: 4rem 1rem 3rem;
+    overflow: hidden;
+}
+
+.memory-deck {
+    position: relative;
+
+    width: min(100%, 760px);
+    height: clamp(350px, 55vw, 490px);
+
+    margin-inline: auto;
+
+    perspective: 1400px;
+    isolation: isolate;
+}
+
+
+/* CARTAS */
+
+.memory-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: clamp(155px, 30vw, 265px);
+    aspect-ratio: 4 / 5;
+
+    padding: 0;
+    border: 1px solid rgba(201, 164, 91, 0.65);
+    border-radius: 5px;
+
+    background: var(--memory-dark);
+
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+
+    transform-style: preserve-3d;
+    transition:
+        transform 600ms cubic-bezier(.2, .7, .2, 1),
+        box-shadow 300ms ease;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.memory-card--left {
+    z-index: 1;
+
+    transform:
+        translate(-105%, -46%)
+        rotate(-9deg)
+        scale(.88);
+}
+
+.memory-card--right {
+    z-index: 2;
+
+    transform:
+        translate(5%, -46%)
+        rotate(9deg)
+        scale(.88);
+}
+
+.memory-card--main {
+    z-index: 3;
+
+    transform:
+        translate(-50%, -50%);
+}
+
+
+/* INTERIOR DE LA CARTA */
+
+.memory-card__inner {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transition: transform 700ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.memory-card.is-flipped .memory-card__inner {
+    transform: rotateY(180deg);
+}
+
+
+/* ANVERSO Y REVERSO */
+
+.memory-card__face {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.memory-card__front {
+    background: var(--memory-dark);
+}
+
+.memory-card__front img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.memory-card__back {
+    padding: clamp(14px, 3vw, 25px);
+
+    text-align: center;
+
+    color: var(--memory-cream);
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201, 164, 91, .12),
+            transparent 50%
+        ),
+        var(--memory-dark);
+
+    border: 5px solid var(--memory-dark);
+    outline: 1px solid rgba(201, 164, 91, .5);
+    outline-offset: -9px;
+
+    transform: rotateY(180deg);
+}
+
+.memory-card__number {
+    margin-bottom: 15px;
+
+    color: var(--memory-gold-light);
+
+    font-size: .65rem;
+    letter-spacing: .25em;
+}
+
+.memory-card__back h3 {
+    margin: 0 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.memory-card__back p {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(.9rem, 2vw, 1.15rem);
+    line-height: 1.5;
+
+    color: var(--memory-cream);
+}
+
+.memory-card__hint {
+    display: block;
+
+    margin-top: 20px;
+
+    color: var(--memory-gold-light);
+
+    font-size: .65rem;
+    letter-spacing: .05em;
+}
+
+.memory-card__caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 35px 12px 15px;
+
+    color: white;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+
+    text-align: center;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, .8)
+    );
+}
+
+
+/* CARTA SELECCIONADA */
+
+.memory-card.is-active {
+    z-index: 10;
+}
+
+.memory-card--left.is-active {
+    transform:
+        translate(-50%, -50%)
+        rotate(0)
+        scale(1);
+}
+
+.memory-card--right.is-active {
+    transform:
+        translate(-50%, -50%)
+        rotate(0)
+        scale(1);
+}
+
+.memory-card--main.is-active {
+    transform:
+        translate(-50%, -50%)
+        rotate(0)
+        scale(1);
+}
+
+
+/* INSTRUCCIÓN */
+
+.memory-instruction {
+    margin: 25px auto 0;
+
+    text-align: center;
+
+    font-size: .75rem;
+    letter-spacing: .08em;
+
+    color: #c9bda9;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 600px) {
+    .memory-section {
+        padding: 3rem .5rem 2rem;
+    }
+
+    .memory-deck {
+        width: 100%;
+        height: clamp(310px, 95vw, 400px);
+    }
+
+    .memory-card {
+        width: clamp(145px, 44vw, 205px);
+    }
+
+    .memory-card--left {
+        transform:
+            translate(-88%, -46%)
+            rotate(-9deg)
+            scale(.82);
+    }
+
+    .memory-card--right {
+        transform:
+            translate(-12%, -46%)
+            rotate(9deg)
+            scale(.82);
+    }
+
+    .memory-card--left.is-active,
+    .memory-card--right.is-active,
+    .memory-card--main.is-active {
+        transform:
+            translate(-50%, -50%)
+            rotate(0)
+            scale(1);
+    }
+
+    .memory-card__back {
+        padding: 15px;
+    }
+}
+
+
+/* MÓVILES PEQUEÑOS */
+
+@media (max-width: 360px) {
+    .memory-deck {
+        height: 300px;
+    }
+
+    .memory-card {
+        width: 145px;
+    }
+
+    .memory-card__back h3 {
+        font-size: 1.3rem;
+    }
+
+    .memory-card__back p {
+        font-size: .85rem;
+    }
+
+    .memory-card__hint {
+        margin-top: 12px;
+        font-size: .58rem;
+    }
+}
+
+
+/* ACCESIBILIDAD: MENOS MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    .memory-card,
+    .memory-card__inner {
+        transition: none;
+    }
+}
+
+/* ========================================
+   SECCIÓN FAMILIAR
+======================================== */
+
+.family {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(201, 164, 91, 0.09),
+            transparent 55%
+        ),
+        #11100e;
+}
+
+.family-content {
+    width: min(100%, 800px);
+    margin-inline: auto;
+}
+
+.family h2 {
+    margin-bottom: 45px;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+}
+
+/* PORTARRETRATO */
+
+.portrait-frame {
+    position: relative;
+
+    width: min(100%, 390px);
+    margin: 0 auto 35px;
+    padding: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #e8d19a 0%,
+        #92703a 18%,
+        #d4b56f 38%,
+        #745629 65%,
+        #e8d19a 100%
+    );
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55),
+        0 0 0 1px rgba(231, 207, 152, 0.35);
+
+    transition:
+        transform 400ms ease,
+        box-shadow 400ms ease;
+}
+
+/* Borde interior negro */
+
+.portrait-mat {
+    position: relative;
+    padding: 9px;
+
+    background: #171512;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Fotografía */
+
+.portrait-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+    object-position: center;
+
+    background: #24211c;
+}
+
+/* Placa inferior */
+
+.portrait-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+
+    padding: 18px 8px 14px;
+
+    background: #171512;
+    color: #e7cf98;
+}
+
+.portrait-caption > span:first-child {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.portrait-heart {
+    font-size: 1rem;
+    color: #c9a45b;
+}
+
+.portrait-caption small {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #f5efe4;
+}
+
+/* Texto inferior */
+
+.family .tiny {
+    max-width: 540px;
+    margin: 0 auto;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #d9d0c1;
+}
+
+/* Interacción discreta en computadora */
+
+@media (hover: hover) and (pointer: fine) {
+    .portrait-frame:hover {
+        transform: translateY(-5px);
+
+        box-shadow:
+            0 32px 70px rgba(0, 0, 0, 0.6),
+            0 0 0 1px rgba(231, 207, 152, 0.55);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .family {
+        padding: 75px 20px;
+    }
+
+    .family h2 {
+        margin-bottom: 35px;
+    }
+
+    .portrait-frame {
+        width: min(100%, 340px);
+        padding: 9px;
+    }
+
+    .portrait-mat {
+        padding: 6px;
+    }
+
+    .portrait-caption {
+        padding: 15px 6px 12px;
+    }
+
+    .portrait-caption > span:first-child {
+        font-size: 0.58rem;
+    }
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    .portrait-frame {
+        transition: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="monogram">A · F</div>
+    <div class="eyebrow">Una pequeña historia de amor</div>
+    <h1>Para Ana-i<span>2 años de nosotros</span></h1>
+    <p class="lead">
+      Porque hay historias que parecen demasiado bonitas para ser verdad...
+      hasta que un día descubres que estás viviendo una.
+    </p>
+    <a href="#historia" class="btn">Abrir nuestra historia ↓</a>
+  </div>
+  <div class="scroll">DESLIZA</div>
+</section>
+
+<section id="historia">
+  <div class="wrap center">
+    <div class="eyebrow">Capítulo I · El reencuentro</div>
+    <h2>Diez años después...</h2>
+    <div class="gold-line"></div>
+    <p class="intro-copy">
+      Íbamos juntos en la prepa. La vida siguió, cada quien tomó su camino
+      y durante mucho tiempo parecía que aquella historia se había quedado
+      en otra época.
+    </p>
+    <div class="big-quote">
+      “Parecía que solo sería un sueño, algo que quizá no pasaría.
+      <br>Pero… ¿y si sí?”
+    </div>
+  </div>
+</section>
+
+<section class="memory-section" aria-label="Nuestros recuerdos">
+
+    <div class="memory-deck">
+
+        <!-- CARTA IZQUIERDA -->
+        <button
+            class="memory-card memory-card--left"
+            type="button"
+            aria-label="Voltear fotografía izquierda"
+            aria-pressed="false"
+        >
+            <div class="memory-card__inner">
+
+                <div class="memory-card__face memory-card__front">
+                    <img
+                        src="img/img1.jpg"
+                        alt="Uno de nuestros recuerdos"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="memory-card__face memory-card__back">
+                    <span class="memory-card__number">01</span>
+
+                    <h3>Un recuerdo nuestro</h3>
+
+                    <p>
+                        Hay momentos que merecen quedarse
+                        para siempre.
+                    </p>
+
+                    <span class="memory-card__hint">
+                        Con amor ❤️
+                    </span>
+                </div>
+
+            </div>
+        </button>
+
+
+        <!-- CARTA PRINCIPAL -->
+        <button
+            class="memory-card memory-card--main"
+            type="button"
+            aria-label="Voltear fotografía principal"
+            aria-pressed="false"
+        >
+            <div class="memory-card__inner">
+
+                <div class="memory-card__face memory-card__front">
+                    <img
+                        src="img/img2.jpg"
+                        alt="Ana-i y nuestra historia"
+                        fetchpriority="high"
+                    >
+
+                    <span class="memory-card__caption">
+                        Nuestra historia
+                    </span>
+                </div>
+
+                <div class="memory-card__face memory-card__back">
+                    <span class="memory-card__number">02</span>
+
+                    <h3>¿Y si sí?</h3>
+
+                    <p>
+                        Parecía que solo sería un sueño,
+                        algo que quizá no pasaría.
+                        Pero aquí estamos.
+                    </p>
+
+                    <span class="memory-card__hint">
+                        Toca para regresar ❤️
+                    </span>
+                </div>
+
+            </div>
+        </button>
+
+
+        <!-- CARTA DERECHA -->
+        <button
+            class="memory-card memory-card--right"
+            type="button"
+            aria-label="Voltear fotografía derecha"
+            aria-pressed="false"
+        >
+            <div class="memory-card__inner">
+
+                <div class="memory-card__face memory-card__front">
+                    <img
+                        src="img/img3.jpg"
+                        alt="Otro recuerdo especial"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="memory-card__face memory-card__back">
+                    <span class="memory-card__number">03</span>
+
+                    <h3>Nuestro capítulo favorito</h3>
+
+                    <p>
+                        Y la historia más bonita todavía
+                        tiene muchas páginas por escribir.
+                    </p>
+
+                    <span class="memory-card__hint">
+                        Con amor ❤️
+                    </span>
+                </div>
+
+            </div>
+        </button>
+
+    </div>
+
+    <p class="memory-instruction">
+        Toca las fotografías para descubrir lo que esconden.
+    </p>
+
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Capítulo II · Lo que me enamoró</div>
+    <h2>Tu rostro angelical.</h2>
+    <p style="max-width:680px">
+      Podría hablar de mil cosas, pero hay recuerdos que simplemente se quedan.
+      Hay miradas que uno reconoce incluso después de diez años.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">✦</div>
+        <h3>Elegancia</h3>
+        <p>
+          Porque tienes esa forma tuya de hacer que hasta lo sencillo se vea
+          especial.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">☕</div>
+        <h3>Pequeños gustos</h3>
+        <p>
+          Café, ropa, maquillaje, salidas juntos,comida rica y esas cosas que convierten
+          cualquier día normal en uno más bonito.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌻</div>
+        <h3>Flores</h3>
+        <p>
+          Girasoles, flores amarillas y, por supuesto, la vez que te pregunte
+          ¿Las flores se cargan cómo si fueran un bebé? 😂
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Capítulo III · Nosotros</div>
+    <h2>Algunas cosas que guardo de estos dos años.</h2>
+
+    <div class="timeline">
+      <article class="moment">
+        <span class="number">01 · VOLVER A ENCONTRARNOS</span>
+        <h3>Diez años parecían mucho.</h3>
+        <p>
+          Aquel día estaba nervioso, cuando te volvía a ver después de tanto tiempo. Pero entonces me sonreíste y todo cobró sentido. Y desde ese momento supe que no quería dejarte ir otra vez.
+        </p>
+      </article>
+
+      <article class="moment">
+        <span class="number">02 · TODO LO QUE VINO DESPUÉS</span>
+        <h3>La vida empezó a cambiar.</h3>
+        <p>
+          Una ida a la cineteca, aquel día que comenzo nuestra historia, las noches hablando hasta el amanecer, la primera vez que me dijiste "te amo", vivir juntos, la primera comida que me preparaste, la llegada de nuestra niña y todos los momentos que nos hicieron crecer y aprender a amarnos cada día más.
+        </p>
+      </article>
+
+      <article class="moment">
+        <span class="number">03 · EL MOMENTO MÁS GRANDE</span>
+        <h3>Cuando nació nuestra niña.</h3>
+        <p>
+          Y entonces nuestra historia dejó de ser solamente una historia de
+          dos. Llegó alguien pequeñita a enseñarnos una nueva manera de amar.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Una carta para ti</div>
+    <h2>Lo que quería decirte.</h2>
+
+    <div class="letter">
+      <p class="opening">Ana-i,</p>
+
+      <p>
+        Parecía que solo sería un sueño, algo que quizá no pasaría.
+        A veces todavía no parece real. A veces siento que estoy soñando
+        cuando pienso que después de tantos años la vida nos volvió a poner
+        frente a frente y terminamos aquí.
+      </p>
+
+      <p>
+        A tu lado he vivido cosas que no cambiaría por nada. Hemos tenido
+        momentos increíbles y también momentos difíciles, porque nuestra
+        historia no es perfecta. Pero precisamente por eso es nuestra.
+      </p>
+
+      <p>
+        Hemos aprendido, nos hemos equivocado, hemos reído, hemos discutido,
+        hemos vuelto a abrazarnos y seguimos aquí. Y ahora, además, tenemos
+        a nuestra pequeña, que convirtió nuestro “nosotros” en algo todavía
+        más grande.
+      </p>
+
+      <p>
+        Si pudiera regresar diez años y decirle a aquel yo de la prepa que
+        algún día volvería a encontrarte, probablemente no me lo creería.
+        Y mucho menos imaginaría todo lo que estaríamos viviendo.
+      </p>
+
+      <p>
+        Gracias por estos dos años. Gracias por cada recuerdo, por cada
+        momento bonito y también por cada momento difícil que nos ha hecho
+        crecer.
+      </p>
+
+      <p>
+        No sé exactamente qué nos espera en los próximos años.
+        Pero sí sé algo: no cambiaría por nada lo que hemos vivido
+        ni lo que todavía nos falta por vivir.
+      </p>
+
+      <p>
+        Porque si esto es un sueño, no quiero despertar.
+      </p>
+
+      <div class="signature">
+        Te amo mi Amor.<br>
+        y también tu Nena maciza. (porque ella estuvo con nosotros casi desde el principio) ❤️
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Capítulo IV · Nuestra noche</div>
+    <h2>Una cena para nosotros tres.</h2>
+    <p style="max-width:720px">
+      Quiero cocinar para ti y nuestra pequeña. Una cena sencilla, pero preparada con cariño.
+      Taquitos,  día y hora por confirmar. No hace falta más. Solo nosotros tres, disfrutando el momento y celebrando que seguimos aquí.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">🌮</div>
+        <h3>Tacos</h3>
+        <p>
+          Una cena sencilla, preparada con cariño. Porque no se trata de cuánto
+          cuesta, sino de con quién compartes la mesa.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🥤</div>
+        <h3>Tu bebida favorita</h3>
+        <p>
+          Frappe Chocolate mexicano starbucks. Ese pequeño detalle que dice mucho más que
+          cualquier cena elegante.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌻</div>
+        <h3>Una flor</h3>
+        <p>
+          Un pequeño recuerdo de nuestras flores amarillas y de aquellos girasoles que se cargan cómo bebé. 😂
+        </p>
+      </article>
+    </div>
+
+    <div class="letter" style="margin-top:35px;background:rgba(255,255,255,.035);color:var(--cream);">
+      <p style="color:var(--soft);font-family:'Cormorant Garamond';font-size:1.35rem">
+        <strong style="color:var(--gold2)">Regla de esa noche:</strong>
+        celulares boca abajo durante la cena. No porque queramos escapar del
+        mundo, sino porque queremos estar aquí. Los tres. ❤️
+      </p>
+      <p style="color:var(--soft);font-family:'Cormorant Garamond';font-size:1.35rem">
+        Y si nuestra pequeña decide que la cena romántica necesita convertirse
+        en una noche con canciones de Luli Pampín... pues también será parte del recuerdo. 😂👶
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="dinner-rules">
+  <div class="wrap center">
+    <div class="eyebrow">Una noche para nosotros</div>
+    <h2>Reglas para nuestra cena.</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="icon">📵</div>
+        <h3>Regla #1</h3>
+        <p>Durante la cena, los celulares descansan. Solo nosotros tres, disfrutando el momento. ❤️</p>
+      </article>
+      <article class="card">
+        <div class="icon">👶</div>
+        <h3>Regla #2</h3>
+        <p>Nuestra niña está incluida. Si necesita atención, la cena se detiene. Esta noche es de los tres.</p>
+      </article>
+      <article class="card">
+        <div class="icon">❤️</div>
+        <h3>Regla #3</h3>
+        <p>No hay cena perfecta, ni tiene que haberla. Solo queremos estar juntos y celebrar que seguimos aquí.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="family">
+
+    <div class="family-content">
+
+        <div class="eyebrow">Capítulo V · Éramos dos</div>
+
+        <h2>Y ahora somos tres.</h2>
+
+        <div class="portrait-frame">
+
+            <div class="portrait-mat">
+
+                <img
+                    src="img/img5.jpg"
+                    alt="Anahí y Nena Maciza"
+                    class="portrait-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="portrait-caption">
+                <span>ANA-I & NENA MACIZA</span>
+                <span class="portrait-heart">♥</span>
+                <small>Nuestro capítulo favorito</small>
+            </div>
+
+        </div>
+
+        <p class="tiny">
+            Si el mundo era bonito con una Anahí, ahora es todavía
+            más bonito con su Nena maciza. ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<section class="coupon-section">
+  <div class="wrap">
+    <div class="eyebrow">Y falta una cosa...</div>
+    <h2>Tu regalo de aniversario.</h2>
+    <p>
+      No quise decirte qué es. Hay regalos que son mejores cuando se descubren.
+    </p>
+
+    <div class="coupon" id="coupon">
+      <div class="coupon-inner">
+        <div class="coupon-label">CUPÓN ESPECIAL · 02 AÑOS</div>
+        <h3>Para Ana-i</h3>
+        <p class="mystery">
+          Vale por una experiencia que tú podrás elegir...
+          pero tendrás que canjearlo para descubrir qué es. 👀
+        </p>
+
+        <button class="btn" id="openCoupon">Descubrir mi regalo ✦</button>
+
+        <div class="reveal">
+          <div class="secret">
+            <strong>CANJEABLE POR</strong>
+            <p>
+              Una salida especial contigo. Tú eliges cuándo.
+              Yo me encargo de hacer que valga la pena. ❤️
+            </p>
+            <div class="terms">
+              Canjeable cuando el presupuesto lo permita.
+              Sin fecha de caducidad. ❤️
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-title">A + F</div>
+  <div class="footer-small">Dos años. Una historia. Y todavía nos queda muchísimo por vivir.</div>
+  <div style="margin-top:18px;color:#c9a45b">♥</div>
+</footer>
+
+<script>
+const coupon = document.getElementById("coupon");
+const btn = document.getElementById("openCoupon");
+
+btn.addEventListener("click", () => {
+  coupon.classList.toggle("open");
+  btn.textContent = coupon.classList.contains("open")
+    ? "❤️ Regalo descubierto"
+    : "Descubrir mi regalo ✦";
+});
+
+document.querySelectorAll(".memory-deck").forEach((deck) => {
+    const cards = [...deck.querySelectorAll(".memory-card")];
+
+    cards.forEach((card) => {
+        card.addEventListener("click", () => {
+
+            // Si la carta está atrás, llevarla al frente.
+            if (!card.classList.contains("is-active")) {
+                cards.forEach((item) => {
+                    item.classList.remove("is-active");
+                    item.setAttribute("aria-pressed", "false");
+                });
+
+                card.classList.add("is-active");
+                card.setAttribute("aria-pressed", "true");
+
+                return;
+            }
+
+            // Si ya está al frente, voltear su contenido.
+            const flipped = card.classList.toggle("is-flipped");
+
+            card.setAttribute(
+                "aria-pressed",
+                flipped ? "true" : "false"
+            );
+        });
+    });
+});
+</script>
+
+</body>
+</html>
